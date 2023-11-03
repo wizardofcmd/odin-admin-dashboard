@@ -32,16 +32,40 @@ ul {
 
 #content-section {
   display: grid;
+  grid-template-rows: 1fr 4fr;
   width: 75%;
   height: 100%;
 }
 
 header {
-  height: 30%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   width: 100%;
 }
 
+header > div {
+  display: grid;
+}
+
+header > div:first-child,
+header > div:last-child {
+  width: 100%;
+  display: flex;
+}
+
+#search-section,
+#greeting-section {
+  width: 70%;
+}
+
+#profile-section,
+#action-section {
+  width: 30%;
+}
+
 main {
-  height: 70%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
   width: 100%;
 }
