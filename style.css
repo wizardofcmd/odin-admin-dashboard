@@ -69,3 +69,19 @@ main {
   grid-template-rows: 1fr;
   width: 100%;
 }
+
+#projects-section {
+  display: grid;
+  grid-template-rows: auto 3fr;
+}
+
+#projects-grid {
+  display: grid;
+  grid: 1fr 1fr 1fr / 1fr 1fr;
+}
+
+.project-card {
+  width: 200px;
+  height: 80px;
+  border: 2px solid;
+}
