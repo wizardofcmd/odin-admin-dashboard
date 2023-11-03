@@ -4,39 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Project | Admin Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://meyerweb.com/eric/tools/css/reset/reset200802.css"
+    /> -->
+    <!-- <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div>
-      <header>
-        <!-- Top section (search, notifs, profile) -->
-        <div>
-          <div>
-            <img src="#" alt="Search icon, magnifying glass" />
-            <input type="text" />
-          </div>
-          <div>
-            <img src="#" alt="Notification icon, bell" />
-            <img src="#" alt="User profile picture" />
-            <p>Profile Name</p>
-          </div>
-        </div>
-        <!-- Bottom section (hi there, buttons) -->
-        <div>
-          <div>
-            <img src="#" alt="Large user profile picture" />
-            <div>
-              <p>Hi there,</p>
-              <p>Profile Name</p>
-            </div>
-          </div>
-          <div>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
-          </div>
-        </div>
-      </header>
-      <nav>
+      <nav id="sidebar-nav">
         <div>
           <!-- 'Dashboard' h1 -->
           <div>
@@ -45,40 +26,98 @@
           <!-- Nav items -->
           <div>
             <ul>
-              <li>Home</li>
-              <li>Profile</li>
-              <li>Messages</li>
-              <li>History</li>
-              <li>Tasks</li>
-              <li>Communities</li>
+              <div>
+                <img src="#" alt="" />
+                <li>Home</li>
+              </div>
+              <div>
+                <img src="#" alt="" />
+                <li>Profile</li>
+              </div>
+              <div>
+                <img src="#" alt="" />
+                <li>Messages</li>
+              </div>
+              <div>
+                <img src="#" alt="" />
+                <li>History</li>
+              </div>
+              <div>
+                <img src="#" alt="" />
+                <li>Tasks</li>
+              </div>
+              <div>
+                <img src="#" alt="" />
+                <li>Communities</li>
+              </div>
             </ul>
             <ul>
-              <li>Settings</li>
-              <li>Support</li>
-              <li>Privacy</li>
+              <div>
+                <img src="#" alt="" />
+                <li>Settings</li>
+              </div>
+              <div>
+                <img src="#" alt="" />
+                <li>Support</li>
+              </div>
+              <div>
+                <img src="#" alt="" />
+                <li>Privacy</li>
+              </div>
             </ul>
           </div>
         </div>
       </nav>
-      <main>
-        <!-- Container div -->
-        <div>
-          <!-- 2/3 length grid (projects) -->
-          <div>
-            <h2>Your Projects</h2>
-            <div></div>
-          </div>
-          <!-- 1/3 length grid (announcements, trending) -->
+      <div id="content-section">
+        <header>
+          <!-- Top section (search, notifs, profile) -->
           <div>
             <div>
-              <h2>Announcements</h2>
+              <img src="#" alt="Search icon, magnifying glass" />
+              <input type="text" />
             </div>
             <div>
-              <h2>Trending</h2>
+              <img src="#" alt="Notification icon, bell" />
+              <img src="#" alt="User profile picture" />
+              <p>Profile Name</p>
             </div>
           </div>
-        </div>
-      </main>
+          <!-- Bottom section (hi there, buttons) -->
+          <div>
+            <div>
+              <img src="#" alt="Large user profile picture" />
+              <div>
+                <p>Hi there,</p>
+                <p>Profile Name</p>
+              </div>
+            </div>
+            <div>
+              <button>New</button>
+              <button>Upload</button>
+              <button>Share</button>
+            </div>
+          </div>
+        </header>
+        <main>
+          <!-- Container div -->
+          <div>
+            <!-- 2/3 length grid (projects) -->
+            <div>
+              <h2>Your Projects</h2>
+              <div></div>
+            </div>
+            <!-- 1/3 length grid (announcements, trending) -->
+            <div>
+              <div>
+                <h2>Announcements</h2>
+              </div>
+              <div>
+                <h2>Trending</h2>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
   </body>
 </html>
