@@ -5,12 +5,17 @@ html {
 body {
   height: 100vh;
   width: 100vw;
+  background-color: #fcf6f5ff;
 }
 
 h1,
 h2,
 p {
   margin: 0;
+}
+
+h1 {
+  padding-left: 5%;
 }
 
 body > div {
@@ -27,13 +32,33 @@ ul {
 #sidebar-nav {
   display: grid;
   height: 100%;
-  width: 25%;
+  width: 15%;
+  background-color: #2bae66ff;
+}
+
+#sidebar-nav > div:first-child {
+  display: grid;
+  grid: auto 1fr / 1fr;
+  gap: 5%;
+}
+
+#nav-items {
+  display: grid;
+  grid: min-content / 1fr;
+  gap: 5%;
+}
+
+ul > div {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  padding-left: 5%;
 }
 
 #content-section {
   display: grid;
   grid-template-rows: 1fr 4fr;
-  width: 75%;
+  width: 85%;
   height: 100%;
 }
 
