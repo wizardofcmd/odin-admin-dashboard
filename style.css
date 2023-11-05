@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
 html {
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
@@ -15,6 +18,7 @@ p {
 }
 
 h1 {
+  padding-top: 8px;
   padding-left: 5%;
 }
 
@@ -29,11 +33,16 @@ ul {
   padding: 0;
 }
 
+li {
+  font-weight: bold;
+}
+
 #sidebar-nav {
   display: grid;
   height: 100%;
   width: 15%;
   background-color: #2bae66ff;
+  color: #fcf6f5ff;
 }
 
 #sidebar-nav > div:first-child {
@@ -44,7 +53,12 @@ ul {
 
 #nav-items {
   display: grid;
-  grid: min-content / 1fr;
+  grid-template-rows: min-content min-content;
+  gap: 10%;
+}
+
+#nav-items ul {
+  display: grid;
   gap: 5%;
 }
 
@@ -86,6 +100,73 @@ header > div:last-child {
 #profile-section,
 #action-section {
   width: 30%;
+}
+
+#search-section {
+  display: flex;
+  padding: 16px;
+  gap: 1%;
+}
+
+#search-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+input[type="text"] {
+  width: 60%;
+  height: 1.25rem;
+}
+
+#profile-section {
+  display: flex;
+  padding: 16px;
+  gap: 3%;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#profile-name {
+  padding-top: 16px;
+  font-weight: bolder;
+}
+
+#notification-icon {
+  padding-top: 8px;
+}
+
+#profile-name-bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#greeting-section {
+  padding-left: 16px;
+  display: flex;
+  gap: 2%;
+}
+
+#greeting-section > div {
+  padding-top: 12px;
+}
+
+button {
+  all: unset;
+  border-radius: 50px;
+  padding: 8px;
+  width: 80px;
+  height: 20px;
+  text-align: center;
+  background-color: #2bae66ff;
+  color: #fcf6f5ff;
+  font-weight: 500;
+}
+
+#action-section {
+  display: flex;
+  padding-top: 16px;
+  justify-content: center;
+  gap: 3%;
 }
 
 main {
@@ -132,6 +213,10 @@ main {
 .icon {
   width: 2rem;
   height: 2rem;
+}
+
+#sidebar-nav .icon {
+  filter: invert(1);
 }
 
 .user-profile-pic {
