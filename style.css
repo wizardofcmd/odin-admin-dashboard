@@ -13,6 +13,7 @@ body {
 
 h1,
 h2,
+h3,
 p {
   margin: 0;
 }
@@ -174,6 +175,7 @@ main {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
   width: 100%;
+  background-color: #e2e8f0;
 }
 
 #projects-section {
@@ -184,12 +186,40 @@ main {
 #projects-grid {
   display: grid;
   grid: 1fr 1fr 1fr / 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+h2 {
+  padding-top: 32px;
+}
+
+#projects-title {
+  padding-left: 16px;
 }
 
 .project-card {
-  width: 200px;
-  height: 80px;
+  width: 80%;
+  height: 85%;
   border: 2px solid;
+  border-radius: 16px;
+  display: grid;
+  grid-template-rows: min-content min-content;
+}
+
+.project-card h3,
+.project-card p {
+  padding-top: 16px;
+  padding-left: 8px;
+}
+
+.project-card div {
+  justify-self: end;
+  align-self: flex-end;
+}
+
+.project-card div > img {
+  padding-right: 16px;
 }
 
 #news-section {
@@ -208,6 +238,45 @@ main {
 #announcements-card,
 #trending-card {
   border: 2px solid;
+}
+
+#announcements-card {
+  border: 2px solid;
+  border-radius: 16px;
+  width: 95%;
+  height: 90%;
+  margin-top: 12px;
+}
+
+#trending-section h2 {
+  padding-top: 8px;
+}
+
+#trending-card {
+  border: 2px solid;
+  border-radius: 16px;
+  width: 95%;
+  height: 95%;
+  font-size: small;
+  display: grid;
+  align-items: center;
+  /* justify-content: center; */
+  padding-left: 8px;
+}
+
+#trending-card div p:first-child {
+  font-weight: bold;
+}
+
+#trending-card div {
+  display: flex;
+  gap: 4px;
+}
+
+#trending-card div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .icon {
